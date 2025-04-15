@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d543180f83b06650ed7fffc6feaad370" extends="task" label="MyDemo" max_length="40" name="x_1639325_mydemo_mydemo" type="collection">
+        <element label="Transaction Date" mandatory="true" max_length="40" name="transaction_date" type="glide_date"/>
+        <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Requested for email" mandatory="true" max_length="40" name="u_requested_for_email" type="string"/>
+        <element choice="3" default="0" label="Expense type" mandatory="true" max_length="1" name="expense_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Taxi" sequence="0" value="0"/>
+                <element inactive_on_update="false" label="Meal" sequence="1" value="1"/>
+            </choice>
+        </element>
+        <element label="Amount" mandatory="true" max_length="15" name="amount" type="currency"/>
+    </element>
+</database>

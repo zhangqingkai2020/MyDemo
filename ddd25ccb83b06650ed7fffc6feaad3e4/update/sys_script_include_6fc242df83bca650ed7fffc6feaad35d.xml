@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1639325_mydemo.GetEmailAddressMyDemo</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Description</description>
+        <mobile_callable>false</mobile_callable>
+        <name>GetEmailAddressMyDemo</name>
+        <sandbox_callable>true</sandbox_callable>
+        <script><![CDATA[var GetEmailAddressMyDemo = Class.create();
+// Extend the global.AbstractAjaxProcessor class
+GetEmailAddressMyDemo.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    // Define the getEmail function.  
+    // Create a GlideRecord for the User table.
+    // Use the sysparm_userID passed from the client side to retrieve a record from the User table.
+    // Return the email address for the requested record
+    getEmail: function() {
+        var userRecord = new GlideRecord("sys_user");
+        userRecord.get(this.getParameter('sysparm_userID'));
+        return userRecord.email + '';
+    },
+    type: 'GetEmailAddressMyDemo'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-14 15:31:19</sys_created_on>
+        <sys_id>6fc242df83bca650ed7fffc6feaad35d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>GetEmailAddressMyDemo</sys_name>
+        <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
+        <sys_update_name>sys_script_include_6fc242df83bca650ed7fffc6feaad35d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-14 16:11:46</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>6fc242df83bca650ed7fffc6feaad35d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-14 15:31:19</sys_created_on>
+        <sys_id>8863865f83bca650ed7fffc6feaad34f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-14 15:31:19</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

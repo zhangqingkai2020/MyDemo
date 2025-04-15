@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1639325_mydemo_mydemo</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Transaction Date field check</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    // Add your code here
+    // rightnow stores the current time
+    var rightnow = new GlideDateTime();
+    // Create a GlideDateTime object for the transaction_date date
+    var transactionDate = new GlideDateTime(current.transaction_date);
+
+    // If the transactionDate date is future rightnow, do not write the record to the database
+    // Output an error message to the screen
+    if (transactionDate.after(rightnow)) {
+        gs.addErrorMessage("Transaction Date cannot be in the future.  Your request has not been saved to the database.");
+        current.setAbortAction(true);
+    }
+
+    // If the transactionDate date is past 3 Months rightnow, do not write the record to the database
+    // Output an error message to the screen
+    rightnow.addMonthsLocalTime(-3);
+    if (transactionDate.before(rightnow)) {
+        gs.addErrorMessage("Transaction Date cannot be in the past 3 Months.  Your request has not been saved to the database.");
+        current.setAbortAction(true);
+    }
+
+    var amount = current.amount.current;
+    if (amount > 9999) {
+        gs.addErrorMessage("Amount cannot be more 9999.  Your request has not been saved to the database.");
+        current.setAbortAction(true);
+    }
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-15 02:16:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b4e6946383b8e650ed7fffc6feaad3cf</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_name>Transaction Date field check</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
+        <sys_update_name>sys_script_b4e6946383b8e650ed7fffc6feaad3cf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-15 03:46:53</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=b4e6946383b8e650ed7fffc6feaad3cf"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>b4e6946383b8e650ed7fffc6feaad3cf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-15 02:16:49</sys_created_on>
+        <sys_id>3717d4e383b8e650ed7fffc6feaad355</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-15 02:16:49</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

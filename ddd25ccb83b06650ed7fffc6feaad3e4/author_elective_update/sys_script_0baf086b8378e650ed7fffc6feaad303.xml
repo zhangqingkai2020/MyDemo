@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1639325_mydemo_mydemo</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Transaction Date Field Check MyDemo</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    alert(current.transaction_date);
+    // Add your code here
+    // rightnow stores the current time
+    var rightnow = new GlideDateTime();
+    // Create a GlideDateTime object for the transaction_date date
+    var transactionDate = new GlideDateTime(current.transaction_date);
+
+    // If the When needed date is before rightnow, do not write the record to the database
+    // Output an error message to the screen
+    if (transactionDate.after(rightnow)) {
+        gs.addErrorMessage("Transaction Date cannot be in the future.  Your request has not been saved to the database.");
+        current.setAbortAction(true);
+    }
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-15 01:45:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0baf086b8378e650ed7fffc6feaad303</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Transaction Date Field Check MyDemo</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
+        <sys_update_name>sys_script_0baf086b8378e650ed7fffc6feaad303</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-15 02:13:48</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=0baf086b8378e650ed7fffc6feaad303"/>
+    <sys_es_latest_script action="DELETE">
+        <id>0baf086b8378e650ed7fffc6feaad303</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-15 01:49:46</sys_created_on>
+        <sys_id>13e01c2b8378e650ed7fffc6feaad3dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-15 01:49:46</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</application>
+        <file_path/>
+        <instance_id>4ca87aef2b9f9e98e2e6fcd2ce91bf73</instance_id>
+        <instance_name>dev294362</instance_name>
+        <name>sys_script_0baf086b8378e650ed7fffc6feaad303</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_1639325_mydemo_mydemo&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Transaction Date Field Check MyDemo&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    alert(current.transaction_date);
+    // Add your code here
+    // rightnow stores the current time
+    var rightnow = new GlideDateTime();
+    // Create a GlideDateTime object for the transaction_date date
+    var transactionDate = new GlideDateTime(current.transaction_date);
+
+    // If the When needed date is before rightnow, do not write the record to the database
+    // Output an error message to the screen
+    if (transactionDate.after(rightnow)) {
+        gs.addErrorMessage("Transaction Date cannot be in the future.  Your request has not been saved to the database.");
+        current.setAbortAction(true);
+    }
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-04-15 01:45:24&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;0baf086b8378e650ed7fffc6feaad303&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Transaction Date Field Check MyDemo&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="MyDemo" source="x_1639325_mydemo"&gt;ddd25ccb83b06650ed7fffc6feaad3e4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="MyDemo"&gt;ddd25ccb83b06650ed7fffc6feaad3e4&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_0baf086b8378e650ed7fffc6feaad303&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-04-15 02:13:48&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=0baf086b8378e650ed7fffc6feaad303"/&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;0baf086b8378e650ed7fffc6feaad303&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-04-15 01:49:46&lt;/sys_created_on&gt;&lt;sys_id&gt;13e01c2b8378e650ed7fffc6feaad3dc&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-04-15 01:49:46&lt;/sys_updated_on&gt;&lt;table&gt;sys_script&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1288322743</payload_hash>
+        <record_name>Transaction Date Field Check MyDemo</record_name>
+        <reverted_from/>
+        <source>9dd25ccb83b06650ed7fffc6feaad3e8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-15 02:13:48</sys_created_on>
+        <sys_id>2f669c2383b8e650ed7fffc6feaad380</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19637395e130000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-15 02:13:48</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>23669c23b3b8e650c4043027e4e72580</update_guid>
+        <update_guid_history>23669c23b3b8e650c4043027e4e72580:1288322743,c51318af6d78e650e90498ac418db56a:1603830803,9f625c2f3378e650a82ef676652f0d1a:1157759385,47419ceb8b78e65064796072584999a6:-1926352296,e3e0186bd678e6503c8856c7c4f2660e:93217175,5bef48abb478e6501fd4dff93ce4d311:1771330416</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-15 02:15:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>09f96b95fe19420b82956288fa8d9739</sys_id>
+        <sys_metadata>0baf086b8378e650ed7fffc6feaad303</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Transaction Date Field Check MyDemo</sys_name>
+        <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
+        <sys_parent display_value="MyDemo">d543180f83b06650ed7fffc6feaad370</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
+        <sys_scope_delete display_value="">0a40fb57fd0f45988b33b58f4d6adaa4</sys_scope_delete>
+        <sys_update_name>sys_script_0baf086b8378e650ed7fffc6feaad303</sys_update_name>
+        <sys_update_version display_value="sys_script_0baf086b8378e650ed7fffc6feaad303">2f669c2383b8e650ed7fffc6feaad380</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-15 02:15:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
