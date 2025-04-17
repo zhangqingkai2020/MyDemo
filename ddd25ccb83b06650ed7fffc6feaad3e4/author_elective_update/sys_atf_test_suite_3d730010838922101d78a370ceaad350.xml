@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_test_suite">
+    <sys_atf_test_suite action="DELETE">
+        <active>true</active>
+        <description/>
+        <input_filter/>
+        <name>My New Test Suite</name>
+        <parent/>
+        <sn_atf_tg_generated>false</sn_atf_tg_generated>
+        <sys_class_name>sys_atf_test_suite</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-17 08:46:31</sys_created_on>
+        <sys_id>3d730010838922101d78a370ceaad350</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My New Test Suite</sys_name>
+        <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
+        <sys_update_name>sys_atf_test_suite_3d730010838922101d78a370ceaad350</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-17 08:46:31</sys_updated_on>
+    </sys_atf_test_suite>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</application>
+        <file_path/>
+        <instance_id>bc6de7f8dbaef118b1eb9027c59619ec</instance_id>
+        <instance_name>dev211123</instance_name>
+        <name>sys_atf_test_suite_3d730010838922101d78a370ceaad350</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_test_suite"><sys_atf_test_suite action="INSERT_OR_UPDATE"><active>true</active><description/><input_filter/><name>My New Test Suite</name><parent/><sn_atf_tg_generated>false</sn_atf_tg_generated><sys_class_name>sys_atf_test_suite</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-04-17 08:46:31</sys_created_on><sys_id>3d730010838922101d78a370ceaad350</sys_id><sys_mod_count>0</sys_mod_count><sys_name>My New Test Suite</sys_name><sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package><sys_policy/><sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope><sys_update_name>sys_atf_test_suite_3d730010838922101d78a370ceaad350</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-04-17 08:46:31</sys_updated_on></sys_atf_test_suite></record_update>]]></payload>
+        <payload_hash>-986561233</payload_hash>
+        <record_name>My New Test Suite</record_name>
+        <reverted_from/>
+        <source>a5757ec883c122101d78a370ceaad36a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-17 08:46:31</sys_created_on>
+        <sys_id>eb738c5c834922101d78a370ceaad38a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19642eda11b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-17 08:46:31</sys_updated_on>
+        <type>Test Suite</type>
+        <update_guid>ef738c5c14492210344960917305ec89</update_guid>
+        <update_guid_history>ef738c5c14492210344960917305ec89:-986561233</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-17 11:50:33</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_test_suite">sys_atf_test_suite</sys_db_object>
+        <sys_id>705a5534c88e4de8b1bb2bc3c41f9190</sys_id>
+        <sys_metadata>3d730010838922101d78a370ceaad350</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My New Test Suite</sys_name>
+        <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
+        <sys_scope_delete display_value="">0a40fb57fd0f45988b33b58f4d6adaa4</sys_scope_delete>
+        <sys_update_name>sys_atf_test_suite_3d730010838922101d78a370ceaad350</sys_update_name>
+        <sys_update_version display_value="sys_atf_test_suite_3d730010838922101d78a370ceaad350">eb738c5c834922101d78a370ceaad38a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-17 11:50:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
