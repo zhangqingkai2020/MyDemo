@@ -5,25 +5,25 @@
         <description/>
         <device_type>browser</device_type>
         <hint/>
-        <name>MyDemo</name>
+        <name/>
         <order>100</order>
-        <roles>x_1639325_mydemo.menu_admin</roles>
+        <roles>x_1639325_mydemo.menu_user</roles>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-04-13 12:45:03</sys_created_on>
+        <sys_created_on>2025-04-17 07:10:36</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>bab3504f83b06650ed7fffc6feaad39f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>MyDemo</sys_name>
+        <sys_id>036de780830922101d78a370ceaad3a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MyDemo_User</sys_name>
         <sys_overrides/>
         <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
         <sys_policy/>
         <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
-        <sys_update_name>sys_app_application_bab3504f83b06650ed7fffc6feaad39f</sys_update_name>
+        <sys_update_name>sys_app_application_036de780830922101d78a370ceaad3a9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-04-17 07:23:01</sys_updated_on>
-        <title>MyDemo</title>
+        <sys_updated_on>2025-04-17 07:10:36</sys_updated_on>
+        <title>MyDemo_User</title>
         <view_name/>
     </sys_app_application>
 </record_update>

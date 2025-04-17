@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <decision_type>allow</decision_type>
+        <description/>
+        <local_or_existing>Local</local_or_existing>
+        <name>GetEmailAddressMyDemo</name>
+        <operation display_value="execute">execute</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-14 15:31:20</sys_created_on>
+        <sys_id>9463829f83bca650ed7fffc6feaad34e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetEmailAddressMyDemo</sys_name>
+        <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
+        <sys_update_name>sys_security_acl_9463829f83bca650ed7fffc6feaad34e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-14 15:31:20</sys_updated_on>
+        <type display_value="client_callable_script_include">client_callable_script_include</type>
+    </sys_security_acl>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</application>
+        <file_path/>
+        <instance_id>bc6de7f8dbaef118b1eb9027c59619ec</instance_id>
+        <instance_name>dev211123</instance_name>
+        <name>sys_security_acl_9463829f83bca650ed7fffc6feaad34e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <decision_type>allow</decision_type>
+        <description/>
+        <local_or_existing>Local</local_or_existing>
+        <name>GetEmailAddressMyDemo</name>
+        <operation display_value="execute">execute</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-14 15:31:20</sys_created_on>
+        <sys_id>9463829f83bca650ed7fffc6feaad34e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetEmailAddressMyDemo</sys_name>
+        <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
+        <sys_update_name>sys_security_acl_9463829f83bca650ed7fffc6feaad34e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-14 15:31:20</sys_updated_on>
+        <type display_value="client_callable_script_include">client_callable_script_include</type>
+    </sys_security_acl>
+</record_update>]]></payload>
+        <payload_hash>-2032024492</payload_hash>
+        <record_name>GetEmailAddressMyDemo</record_name>
+        <reverted_from/>
+        <source>e263436f83f422101d78a370ceaad317</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-15 14:49:42</sys_created_on>
+        <sys_id>4873076f83f422101d78a370ceaad317</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19639ed69500000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-15 14:49:42</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>0873076f52f42210f7a5246491dce217</update_guid>
+        <update_guid_history>0873076f52f42210f7a5246491dce217:-2032024492</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-17 07:54:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>3c491551ab0d49e49ff67b828a9c4f84</sys_id>
+        <sys_metadata>9463829f83bca650ed7fffc6feaad34e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetEmailAddressMyDemo</sys_name>
+        <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
+        <sys_scope_delete display_value="">0a40fb57fd0f45988b33b58f4d6adaa4</sys_scope_delete>
+        <sys_update_name>sys_security_acl_9463829f83bca650ed7fffc6feaad34e</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_9463829f83bca650ed7fffc6feaad34e">4873076f83f422101d78a370ceaad317</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-17 07:54:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
