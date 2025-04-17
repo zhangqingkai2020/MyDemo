@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="DELETE">
+        <collection>sysapproval_approver</collection>
+        <email_layout display_value="Unsubscribe and Preferences">1410041f3b0b2200c869c2c703efc41e</email_layout>
+        <message/>
+        <message_html/>
+        <message_list/>
+        <message_text><![CDATA[<div>Dear ${sysapproval.assigned_to.first_name}</div>
+<div>Short Description: ${sysapproval.short_description}</div>
+<div>Priority: ${sysapproval.priority}</div>
+<div>Category: ${sysapproval.category}</div>
+<div>&nbsp;</div>
+<div>
+<div><hr /></div>
+</div>
+<div>${mail_script:change_request_summary}</div>
+<div>&nbsp;</div>
+<div>Comments:</div>
+<div>${sysapproval.description}</div>
+<div>
+<div><hr /></div>
+</div>
+<div>${mailto:mailto.approval}</div>
+<div>
+<div><hr /></div>
+</div>
+<div>${mailto:mailto.rejection}</div>
+<div>
+<div><hr /></div>
+</div>
+<div>Approval Activity:</div>
+<div>${mail_script:approval_activity}</div>
+<div>
+<div><hr /></div>
+</div>
+<div>Click here to view Approval Request: ${URI+&amp;sysparm_record_target=sysapproval_approver}</div>
+<div>Click here to view ${sysapproval.sys_class_name}: ${sysapproval.URI}</div>]]></message_text>
+        <name>change.itil.approve.role.for.fred</name>
+        <sms_alternate/>
+        <subject>${sysapproval.sys_class_name} ${sysapproval} Approval Request</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-16 07:32:20</sys_created_on>
+        <sys_id>fe266a7b833862101d78a370ceaad39e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>change.itil.approve.role.for.fred</sys_name>
+        <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
+        <sys_update_name>sysevent_email_template_fe266a7b833862101d78a370ceaad39e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-16 07:37:17</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</application>
+        <file_path/>
+        <instance_id>bc6de7f8dbaef118b1eb9027c59619ec</instance_id>
+        <instance_name>dev211123</instance_name>
+        <name>sysevent_email_template_fe266a7b833862101d78a370ceaad39e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sysevent_email_template"&gt;&lt;sysevent_email_template action="INSERT_OR_UPDATE"&gt;&lt;collection&gt;sysapproval_approver&lt;/collection&gt;&lt;email_layout display_value="Unsubscribe and Preferences"&gt;1410041f3b0b2200c869c2c703efc41e&lt;/email_layout&gt;&lt;message/&gt;&lt;message_html/&gt;&lt;message_list/&gt;&lt;message_text&gt;&lt;![CDATA[&lt;div&gt;Dear ${sysapproval.assigned_to.first_name}&lt;/div&gt;
+&lt;div&gt;Short Description: ${sysapproval.short_description}&lt;/div&gt;
+&lt;div&gt;Priority: ${sysapproval.priority}&lt;/div&gt;
+&lt;div&gt;Category: ${sysapproval.category}&lt;/div&gt;
+&lt;div&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;hr /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;${mail_script:change_request_summary}&lt;/div&gt;
+&lt;div&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;Comments:&lt;/div&gt;
+&lt;div&gt;${sysapproval.description}&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;hr /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;${mailto:mailto.approval}&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;hr /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;${mailto:mailto.rejection}&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;hr /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;Approval Activity:&lt;/div&gt;
+&lt;div&gt;${mail_script:approval_activity}&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;hr /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;Click here to view Approval Request: ${URI+&amp;amp;sysparm_record_target=sysapproval_approver}&lt;/div&gt;
+&lt;div&gt;Click here to view ${sysapproval.sys_class_name}: ${sysapproval.URI}&lt;/div&gt;]]&gt;&lt;/message_text&gt;&lt;name&gt;change.itil.approve.role.for.fred&lt;/name&gt;&lt;sms_alternate/&gt;&lt;subject&gt;${sysapproval.sys_class_name} ${sysapproval} Approval Request&lt;/subject&gt;&lt;sys_class_name&gt;sysevent_email_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-04-16 07:32:20&lt;/sys_created_on&gt;&lt;sys_id&gt;fe266a7b833862101d78a370ceaad39e&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;change.itil.approve.role.for.fred&lt;/sys_name&gt;&lt;sys_package display_value="MyDemo" source="x_1639325_mydemo"&gt;ddd25ccb83b06650ed7fffc6feaad3e4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="MyDemo"&gt;ddd25ccb83b06650ed7fffc6feaad3e4&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_template_fe266a7b833862101d78a370ceaad39e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-04-16 07:37:17&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;/sysevent_email_template&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1248452951</payload_hash>
+        <record_name>change.itil.approve.role.for.fred</record_name>
+        <reverted_from/>
+        <source>94a6d97b83b062101d78a370ceaad355</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-16 07:37:17</sys_created_on>
+        <sys_id>630a2ebf833862101d78a370ceaad322</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1963d87e0bc0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-16 07:37:17</sys_updated_on>
+        <type>Email Template</type>
+        <update_guid>e70a2ebf3e38621058b814bf10a89921</update_guid>
+        <update_guid_history>e70a2ebf3e38621058b814bf10a89921:-1248452951,c1b9a2bfcc38621091ea976932da7852:-612071338,1fe8ee3f8a38621097bc596c5bcc2954:850822432</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-17 01:45:25</sys_created_on>
+        <sys_db_object display_value="" name="sysevent_email_template">sysevent_email_template</sys_db_object>
+        <sys_id>829988a427554b859448d2ab0c789021</sys_id>
+        <sys_metadata>fe266a7b833862101d78a370ceaad39e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>change.itil.approve.role.for.fred</sys_name>
+        <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
+        <sys_parent display_value="Sysapproval Approver">d543d768dc9212104f34465061b06a65</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
+        <sys_scope_delete display_value="">0a40fb57fd0f45988b33b58f4d6adaa4</sys_scope_delete>
+        <sys_update_name>sysevent_email_template_fe266a7b833862101d78a370ceaad39e</sys_update_name>
+        <sys_update_version display_value="sysevent_email_template_fe266a7b833862101d78a370ceaad39e">630a2ebf833862101d78a370ceaad322</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-17 01:45:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

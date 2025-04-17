@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>GetAssignedToApprovalLink</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript( /* GlideRecord */ current, /* TemplatePrinter */ template,
+    /* Optional EmailOutbound */
+    email, /* Optional GlideRecord */ email_action,
+    /* Optional GlideRecord */
+    event) {
+
+    // Add your code here
+    var requestID = current.sys_id;
+    var approvalQuery = new GlideRecord('sysapproval_approver');
+    approvalQuery.addQuery('sysapproval', requestID);
+    approvalQuery.orderByDesc('sys_created_on');
+    approvalQuery.setLimit(1);
+    approvalQuery.query();
+
+    while (approvalQuery.next()) {
+        var sysid = approvalQuery.sys_id + '';
+    }
+
+    var aprLink = "https://dev211123.service-now.com/nav_to.do?uri=sysapproval_approver.do?sys_id=" + sysid;
+
+    aprLink = "<a href='" + aprLink + "' target='_blank' rel='noopener noreferrer nofollow'>Approval Link</a>";
+
+    template.print(aprLink);
+
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-16 13:46:33</sys_created_on>
+        <sys_id>f25af3ff83bc62101d78a370ceaad3b4</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>GetAssignedToApprovalLink</sys_name>
+        <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
+        <sys_update_name>sys_script_email_f25af3ff83bc62101d78a370ceaad3b4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-17 02:39:35</sys_updated_on>
+    </sys_script_email>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>f25af3ff83bc62101d78a370ceaad3b4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-16 13:46:33</sys_created_on>
+        <sys_id>749e333383fc62101d78a370ceaad336</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-16 13:46:33</sys_updated_on>
+        <table>sys_script_email</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

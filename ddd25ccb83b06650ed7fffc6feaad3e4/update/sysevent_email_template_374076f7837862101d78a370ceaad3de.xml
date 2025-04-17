@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>sysapproval_approver</collection>
+        <email_layout display_value="Unsubscribe and Preferences">1410041f3b0b2200c869c2c703efc41e</email_layout>
+        <message/>
+        <message_html/>
+        <message_list/>
+        <message_text><![CDATA[<div>Dear  ${sysapproval.assigned_to.first_name} ${sysapproval.assigned_to.last_name}</div>
+<div>Short Description: ${sysapproval.short_description}</div>
+<div>Priority: ${sysapproval.priority}</div>
+<div>Category: ${sysapproval.category}</div>
+<div>&nbsp;</div>
+<div>
+<div><hr /></div>
+</div>
+<div>${mail_script:change_request_summary}</div>
+<div>&nbsp;</div>
+<div>Comments:</div>
+<div>${sysapproval.description}</div>
+<div>
+<div><hr /></div>
+</div>
+<div>${mailto:mailto.approval}</div>
+<div>
+<div><hr /></div>
+</div>
+<div>${mailto:mailto.rejection}</div>
+<div>
+<div><hr /></div>
+</div>
+<div>Approval Activity:</div>
+<div>${mail_script:approval_activity}</div>
+<div>
+<div><hr /></div>
+</div>
+<div>Click here to view Approval Request: ${URI+&amp;sysparm_record_target=sysapproval_approver}</div>
+<div>Click here to view ${sysapproval.sys_class_name}: ${sysapproval.URI}</div>]]></message_text>
+        <name>MyDemo Approval Template</name>
+        <sms_alternate/>
+        <subject>${sysapproval.sys_class_name} ${sysapproval} Approval Request</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-16 08:08:12</sys_created_on>
+        <sys_id>374076f7837862101d78a370ceaad3de</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>MyDemo Approval Template</sys_name>
+        <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
+        <sys_update_name>sysevent_email_template_374076f7837862101d78a370ceaad3de</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-16 08:40:32</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

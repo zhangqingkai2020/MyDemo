@@ -36,7 +36,12 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p>TEST</p>]]></message_html>
+        <message_html><![CDATA[<p>Dear ${assigned_to.first_name} ${assigned_to.last_name}</p>
+<p>A MyDemo Task is assigned to you:</p>
+<p>Number: ${number}</p>
+<p>Short description: ${short_description}</p>
+<p>Please complete this task as soon as possible.</p>
+<p>Click here to view Approval Request:${mail_script:GetAssignedToApprovalLink}</p>]]></message_html>
         <message_list/>
         <message_text/>
         <name>Send Mail To Manger</name>
@@ -50,7 +55,7 @@
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject/>
+        <subject>${sys_class_name} ${number} Approval Request</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -58,7 +63,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>94f24ebf837462101d78a370ceaad3f2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>Send Mail To Manger</sys_name>
         <sys_overrides/>
         <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
@@ -66,7 +71,7 @@
         <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
         <sys_update_name>sysevent_email_action_94f24ebf837462101d78a370ceaad3f2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-04-16 04:47:36</sys_updated_on>
+        <sys_updated_on>2025-04-17 02:11:18</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
