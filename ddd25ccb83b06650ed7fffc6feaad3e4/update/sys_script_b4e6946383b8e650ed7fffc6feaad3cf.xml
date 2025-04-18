@@ -50,12 +50,16 @@
         current.setAbortAction(true);
     }
 
-    var amount = current.amount.current;
-    if (amount > 9999) {
-        gs.addErrorMessage("Amount cannot be more 9999.  Your request has not been saved to the database.");
+    var currencyCode = current.amount.getCurrencyCode();
+    var currencyValue = current.amount.getCurrencyValue();
+    if (currencyValue > 9999) {
+        gs.addErrorMessage("Amount cannot be grater than 9999.  Your request has not been saved to the database.");
         current.setAbortAction(true);
     }
-
+    if (currencyValue <= 0) {
+        gs.addErrorMessage("Amount cannot be less than 0.  Your request has not been saved to the database.");
+        current.setAbortAction(true);
+	}
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -63,7 +67,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b4e6946383b8e650ed7fffc6feaad3cf</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_name>Transaction Date field check</sys_name>
         <sys_overrides/>
         <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
@@ -71,7 +75,7 @@
         <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
         <sys_update_name>sys_script_b4e6946383b8e650ed7fffc6feaad3cf</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-04-15 03:46:53</sys_updated_on>
+        <sys_updated_on>2025-04-18 06:07:08</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

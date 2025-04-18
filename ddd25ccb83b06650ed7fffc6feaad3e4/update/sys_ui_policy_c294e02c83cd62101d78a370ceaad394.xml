@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_1639325_mydemo_mydemo">amount&lt;=javascript:global.getCurrencyFilter('x_1639325_mydemo_mydemo','amount', 'CNY;0')^ORamount&lt;=javascript:global.getCurrencyFilter('x_1639325_mydemo_mydemo','amount', 'USD;0')^EQ<item endquery="false" field="amount" goto="false" newquery="false" operator="&lt;=" or="false" value="javascript:global.getCurrencyFilter('x_1639325_mydemo_mydemo','amount', 'CNY;0')"/>
+            <item endquery="false" field="amount" goto="false" newquery="false" operator="&lt;=" or="true" value="javascript:global.getCurrencyFilter('x_1639325_mydemo_mydemo','amount', 'USD;0')"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+    // Clear the field message 
+    g_form.hideFieldMsg('amount', true);
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+    // Display a message under the amount field to explain what to put in the
+    // amount field.
+    g_form.showFieldMsg('amount', 'Zero or Minus can not be inputed.', 'info');
+}]]></script_true>
+        <set_values/>
+        <short_description>MyDemo Amount zero or minus show message</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-18 05:53:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c294e02c83cd62101d78a370ceaad394</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>MyDemo Amount zero or minus show message</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
+        <sys_update_name>sys_ui_policy_c294e02c83cd62101d78a370ceaad394</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-18 06:18:22</sys_updated_on>
+        <table>x_1639325_mydemo_mydemo</table>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_ui_policy>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>c294e02c83cd62101d78a370ceaad394</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-18 05:55:28</sys_created_on>
+        <sys_id>a7e5a4ac83cd62101d78a370ceaad37c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-18 05:55:28</sys_updated_on>
+        <table>sys_ui_policy</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
