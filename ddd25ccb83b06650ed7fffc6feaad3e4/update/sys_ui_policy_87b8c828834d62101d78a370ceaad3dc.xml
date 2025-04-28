@@ -17,6 +17,7 @@
         <run_scripts>true</run_scripts>
         <script_false><![CDATA[function onCondition() {
     // Clear the field message written by the Execute if true script for the Other field
+	g_form.setValue('u_amount_explain', '');
     g_form.hideFieldMsg('u_amount_explain', true);
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
@@ -32,7 +33,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>87b8c828834d62101d78a370ceaad3dc</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>MyDemo show or hide Amout Explain field</sys_name>
         <sys_overrides/>
         <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
@@ -40,7 +41,7 @@
         <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
         <sys_update_name>sys_ui_policy_87b8c828834d62101d78a370ceaad3dc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-04-18 05:59:08</sys_updated_on>
+        <sys_updated_on>2025-04-23 05:29:46</sys_updated_on>
         <table>x_1639325_mydemo_mydemo</table>
         <ui_type>10</ui_type>
         <view/>

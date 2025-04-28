@@ -14,7 +14,8 @@
 
     // Modified the if to return if the newValue == oldValue to avoid
     // unecessary trips to the server
-    if (isLoading || newValue === '' || newValue == oldValue) {
+    //if (isLoading || newValue === '' || newValue == oldValue) {
+	if (isLoading || newValue === '' ) {
         return;
     }
 
@@ -54,7 +55,6 @@
         g_form.clearValue('assigned_to');
         g_form.setValue('assigned_to',managerFromScriptInclude);
     }
-
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -62,7 +62,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fd0131d7837ca650ed7fffc6feaad300</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>MyDemo Populate Email Field</sys_name>
         <sys_overrides/>
         <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
@@ -70,7 +70,7 @@
         <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
         <sys_update_name>sys_script_client_fd0131d7837ca650ed7fffc6feaad300</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-04-16 04:39:08</sys_updated_on>
+        <sys_updated_on>2025-04-22 00:59:10</sys_updated_on>
         <table>x_1639325_mydemo_mydemo</table>
         <type>onChange</type>
         <ui_type>0</ui_type>
