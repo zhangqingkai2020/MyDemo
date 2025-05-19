@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="DELETE">
+        <active>false</active>
+        <condition_script/>
+        <description/>
+        <event_name>activate.life.cycle.migration</event_name>
+        <name>XXXX</name>
+        <order>100</order>
+        <script/>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 11:23:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b6e60bb553ad62102429d2a0a0490e65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>XXXX</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
+        <sys_update_name>sysevent_script_action_b6e60bb553ad62102429d2a0a0490e65</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 11:23:02</sys_updated_on>
+    </sysevent_script_action>
+    <sys_es_latest_script action="DELETE">
+        <id>b6e60bb553ad62102429d2a0a0490e65</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 11:23:01</sys_created_on>
+        <sys_id>20070bbd536d62102429d2a0a0490e53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 11:23:01</sys_updated_on>
+        <table>sysevent_script_action</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</application>
+        <file_path/>
+        <instance_id>f8c6c33fdb2af5d4b1eb9027c59619d2</instance_id>
+        <instance_name>dev222686</instance_name>
+        <name>sysevent_script_action_b6e60bb553ad62102429d2a0a0490e65</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action"><sysevent_script_action action="INSERT_OR_UPDATE"><active>false</active><condition_script/><description/><event_name>activate.life.cycle.migration</event_name><name>XXXX</name><order>100</order><script/><synchronous>false</synchronous><sys_class_name>sysevent_script_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-17 11:23:02</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b6e60bb553ad62102429d2a0a0490e65</sys_id><sys_mod_count>0</sys_mod_count><sys_name>XXXX</sys_name><sys_overrides/><sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package><sys_policy/><sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope><sys_update_name>sysevent_script_action_b6e60bb553ad62102429d2a0a0490e65</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-17 11:23:02</sys_updated_on></sysevent_script_action><sys_es_latest_script action="INSERT_OR_UPDATE"><id>b6e60bb553ad62102429d2a0a0490e65</id><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-17 11:23:01</sys_created_on><sys_id>20070bbd536d62102429d2a0a0490e53</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-17 11:23:01</sys_updated_on><table>sysevent_script_action</table><use_es_latest>true</use_es_latest></sys_es_latest_script></record_update>]]></payload>
+        <payload_hash>-1780746405</payload_hash>
+        <record_name>XXXX</record_name>
+        <reverted_from/>
+        <source>b307526553e522102429d2a0a0490eb2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 11:23:02</sys_created_on>
+        <sys_id>34078bb553ad62102429d2a0a0490e20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196ddfbb5ad0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 11:23:02</sys_updated_on>
+        <type>Script Action</type>
+        <update_guid>38078bb5f0ad621077c6441ac606d21f</update_guid>
+        <update_guid_history>38078bb5f0ad621077c6441ac606d21f:-1780746405</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 14:41:08</sys_created_on>
+        <sys_db_object display_value="" name="sysevent_script_action">sysevent_script_action</sys_db_object>
+        <sys_id>22db47dd19394e308b258061f717f100</sys_id>
+        <sys_metadata>b6e60bb553ad62102429d2a0a0490e65</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>XXXX</sys_name>
+        <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
+        <sys_scope_delete display_value="">0a40fb57fd0f45988b33b58f4d6adaa4</sys_scope_delete>
+        <sys_update_name>sysevent_script_action_b6e60bb553ad62102429d2a0a0490e65</sys_update_name>
+        <sys_update_version display_value="sysevent_script_action_b6e60bb553ad62102429d2a0a0490e65">34078bb553ad62102429d2a0a0490e20</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 14:41:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

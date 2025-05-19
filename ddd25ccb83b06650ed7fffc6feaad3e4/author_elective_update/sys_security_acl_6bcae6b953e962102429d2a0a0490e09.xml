@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <decision_type>allow</decision_type>
+        <description/>
+        <local_or_existing>Local</local_or_existing>
+        <name>GeneratePDFScoped</name>
+        <operation display_value="execute">execute</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 09:20:52</sys_created_on>
+        <sys_id>6bcae6b953e962102429d2a0a0490e09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GeneratePDFScoped</sys_name>
+        <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
+        <sys_update_name>sys_security_acl_6bcae6b953e962102429d2a0a0490e09</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 09:20:52</sys_updated_on>
+        <type display_value="client_callable_script_include">client_callable_script_include</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</application>
+        <file_path/>
+        <instance_id>f8c6c33fdb2af5d4b1eb9027c59619d2</instance_id>
+        <instance_name>dev222686</instance_name>
+        <name>sys_security_acl_6bcae6b953e962102429d2a0a0490e09</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><decision_type>allow</decision_type><description/><local_or_existing>Local</local_or_existing><name>GeneratePDFScoped</name><operation display_value="execute">execute</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-17 09:20:52</sys_created_on><sys_id>6bcae6b953e962102429d2a0a0490e09</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GeneratePDFScoped</sys_name><sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package><sys_policy/><sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope><sys_update_name>sys_security_acl_6bcae6b953e962102429d2a0a0490e09</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-17 09:20:52</sys_updated_on><type display_value="client_callable_script_include">client_callable_script_include</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-1586283720</payload_hash>
+        <record_name>GeneratePDFScoped</record_name>
+        <reverted_from/>
+        <source>b307526553e522102429d2a0a0490eb2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 09:20:52</sys_created_on>
+        <sys_id>8f0beeb953e962102429d2a0a0490e96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196dd8bd9b00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 09:20:52</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>830beeb915e962105eafb1dc22b9a696</update_guid>
+        <update_guid_history>830beeb915e962105eafb1dc22b9a696:-1586283720</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 09:24:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>2086097749914628874752a52d853710</sys_id>
+        <sys_metadata>6bcae6b953e962102429d2a0a0490e09</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GeneratePDFScoped</sys_name>
+        <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
+        <sys_scope_delete display_value="">0a40fb57fd0f45988b33b58f4d6adaa4</sys_scope_delete>
+        <sys_update_name>sys_security_acl_6bcae6b953e962102429d2a0a0490e09</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_6bcae6b953e962102429d2a0a0490e09">8f0beeb953e962102429d2a0a0490e96</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 09:24:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

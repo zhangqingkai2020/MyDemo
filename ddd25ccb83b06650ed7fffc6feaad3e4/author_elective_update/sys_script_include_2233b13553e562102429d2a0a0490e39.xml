@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1639325_mydemo.GeneratePDFScoped</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Description</description>
+        <mobile_callable>false</mobile_callable>
+        <name>GeneratePDFScoped</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var GeneratePDFScoped = Class.create();
+GeneratePDFScoped.prototype = {
+  initialize: function() {},
+
+  createPDF: function() {
+	gs.info("== createPDF 被调用 ==");
+    return 'PDF 模拟生成成功: ==========' ;
+  },
+
+  type: 'GeneratePDFScoped'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 05:19:43</sys_created_on>
+        <sys_id>2233b13553e562102429d2a0a0490e39</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>GeneratePDFScoped</sys_name>
+        <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
+        <sys_update_name>sys_script_include_2233b13553e562102429d2a0a0490e39</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 08:11:23</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>2233b13553e562102429d2a0a0490e39</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 05:19:42</sys_created_on>
+        <sys_id>aed37df153e562102429d2a0a0490ea7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 05:19:42</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</application>
+        <file_path/>
+        <instance_id>f8c6c33fdb2af5d4b1eb9027c59619d2</instance_id>
+        <instance_name>dev222686</instance_name>
+        <name>sys_script_include_2233b13553e562102429d2a0a0490e39</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1639325_mydemo.GeneratePDFScoped&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description&gt;Description&lt;/description&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;GeneratePDFScoped&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var GeneratePDFScoped = Class.create();
+GeneratePDFScoped.prototype = {
+  initialize: function() {},
+
+  createPDF: function() {
+	gs.info("== createPDF 被调用 ==");
+    return 'PDF 模拟生成成功: ==========' ;
+  },
+
+  type: 'GeneratePDFScoped'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-17 05:19:43&lt;/sys_created_on&gt;&lt;sys_id&gt;2233b13553e562102429d2a0a0490e39&lt;/sys_id&gt;&lt;sys_mod_count&gt;23&lt;/sys_mod_count&gt;&lt;sys_name&gt;GeneratePDFScoped&lt;/sys_name&gt;&lt;sys_package display_value="MyDemo" source="x_1639325_mydemo"&gt;ddd25ccb83b06650ed7fffc6feaad3e4&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="MyDemo"&gt;ddd25ccb83b06650ed7fffc6feaad3e4&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_2233b13553e562102429d2a0a0490e39&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-17 08:11:23&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;2233b13553e562102429d2a0a0490e39&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-17 05:19:42&lt;/sys_created_on&gt;&lt;sys_id&gt;aed37df153e562102429d2a0a0490ea7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-17 05:19:42&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-2043458389</payload_hash>
+        <record_name>GeneratePDFScoped</record_name>
+        <reverted_from/>
+        <source>b307526553e522102429d2a0a0490eb2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 08:11:23</sys_created_on>
+        <sys_id>6d2b5eb553a962102429d2a0a0490ef3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196dd4c3f870000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 08:11:23</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>612b9275cba962108813b31270637567</update_guid>
+        <update_guid_history>612b9275cba962108813b31270637567:-2043458389,357a167561a96210bd31a331c73bc30e:-553566641,5069def1cba96210b338919272b8e278:-184850948,e52656fd256962105569fb3be827c5cb:849348211,d41656bd676962104c146fd9f0f39376:-2045966537,39151ebd6a6962107430553a070d0f3b:551307142,df445e7db6696210c7494a141206751f:1344628896,28f3127d6169621099040292c373922c:-1324880984,f1c11a75d5696210f0e93aa8a7f0b888:868337944,58c19af513696210298dcb8693076926:-2030054099,ecb19af505696210f1fb368af9a96220:918088612,05a1da79b8696210989d63ddbcdad468:-918195417,3c8d0a35ee6962102c5eae004227be78:918088612,d7cc4635856962107a96d4ee9ee92ada:-1251850485,6b8c4635cf69621060d295bd31ffb298:-934902809,9d4b86b1f5696210c6732974247c89b3:49736789,2fe84af5ba2962101f20e9d39c46b0c3:-1949772318,fb020a759e296210b456cbedf018da3b:536411825,229db57188296210e215444eb231fbeb:-1059126960,8145b175cee562102ddf350432978dd0:-1796928793,cc15b17564e5621024631ed8ad2586cb:-1475516177,7e44f5f1b9e5621014360503a43decd8:-1396362543,d914b1755de562106c42835be14cc3c7:-956050519,fad37d3557e562108f35dec1ea8a49e1:-1562081927</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 08:37:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>7b6ac96dbdbb4ce0933fdd3edf269640</sys_id>
+        <sys_metadata>2233b13553e562102429d2a0a0490e39</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GeneratePDFScoped</sys_name>
+        <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
+        <sys_scope_delete display_value="">0a40fb57fd0f45988b33b58f4d6adaa4</sys_scope_delete>
+        <sys_update_name>sys_script_include_2233b13553e562102429d2a0a0490e39</sys_update_name>
+        <sys_update_version display_value="sys_script_include_2233b13553e562102429d2a0a0490e39">6d2b5eb553a962102429d2a0a0490ef3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 08:37:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

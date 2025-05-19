@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1639325_mydemo.GeneratePDFScoped</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>GeneratePDFScoped</name>
+        <sandbox_callable>true</sandbox_callable>
+        <script><![CDATA[var GeneratePDFScoped = Class.create();
+GeneratePDFScoped.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    createPDF: function() {
+        // gs.info("== createPDF 被调用 ==");
+        // gs.info("createPDF GeneratePDFScoped=========================");
+        var sysId = this.getParameter('sysparm_sys_id');
+        // gs.info("sysId sysId=========================" + sysId);
+        var item = new GlideRecordSecure('x_1639325_mydemo_mydemo');
+        if (!item.get(sysId)) return '';
+
+        // gs.info("html=========================");
+        var html = "<html><body>";
+        html += "<h1>请求详情</h1>";
+        html += "<p><strong>编号:</strong> " + item.number + "</p>";
+        html += "<p><strong>描述:</strong> " + item.short_description + "</p>";
+        html += "</body></html>";
+        var v = new sn_pdfgeneratorutils.PDFGenerationAPI;
+        var result = v.convertToPDF(html, "x_1639325_mydemo_mydemo", sysId, "myPDF");
+        // gs.info(JSON.stringify(result));
+        // gs.info("htmleeeeeeee=========================");
+        // var pdf = new GlidePDFGenerator();
+        // gs.info("GlidePDFGenerator=========================");
+        // pdf.setHTML(html);
+        // var fileName = item.number + "_Summary.pdf";
+        // var pdfSysId = pdf.saveAttachment("x_1639325_mydemo_mydemo", sysId, fileName);
+
+        // var file = new GlideSysAttachment().getAttachmentRecordBySysId(pdfSysId);
+        // return file ? "/sys_attachment.do?sys_id=" + pdfSysId : '';
+
+		return JSON.stringify(result);
+
+
+    },
+    type: 'GeneratePDFScoped'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 08:42:41</sys_created_on>
+        <sys_id>c95122bd53a962102429d2a0a0490e9d</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>GeneratePDFScoped</sys_name>
+        <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
+        <sys_update_name>sys_script_include_c95122bd53a962102429d2a0a0490e9d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 14:45:36</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>c95122bd53a962102429d2a0a0490e9d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 08:42:40</sys_created_on>
+        <sys_id>f74262bd53a962102429d2a0a0490e29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 08:42:40</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

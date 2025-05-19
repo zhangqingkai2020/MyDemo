@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>generate_pdf</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Generate PDF</name>
+        <onclick>generatePDF()</onclick>
+        <order>100</order>
+        <script><![CDATA[function generatePDF() {
+    var ga = new GlideAjax('GeneratePDFScoped');
+    ga.addParam('sysparm_name', 'createPDF'); // 注意这里的名字必须和方法名一致！
+    ga.addParam('sysparm_sys_id', g_form.getUniqueValue());
+    // ga.getXML(function(response) {
+    //     var managerFromScriptInclude = response.responseXML.documentElement.getAttribute("answer");
+    //     alert("返回结果：", managerFromScriptInclude);
+    // });
+
+    ga.getXMLAnswer(function(answer) {
+
+        var srtJson = JSON.parse(answer);
+		var attachmentId = srtJson.attachment_id;
+
+        if (srtJson.status === "success") {
+            //window.open(answer);
+			location.reload();
+			alert("success");
+            // var url = '/sys_attachment.do?sys_id=' + attachmentId;
+            // window.open(url, '_blank');
+            
+        } else {
+            alert("生成 PDF 失败");
+        }
+    });
+    // var ga2 = new GlideAjax('PDFGenWrapper');
+
+    // ga2.addParam('sysparm_name', 'generatePDF'); // 注意这里的名字必须和方法名一致！
+    // ga2.addParam('sysparm_sys_id', g_form.getUniqueValue());
+
+    // ga2.getXMLAnswer(function(answer) {
+    //     if (answer) {
+    //         window.open(answer);
+    //     } else {
+    //         alert("生成333333 PDF 失败");
+    //     }
+    // });
+
+
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 04:57:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>709b6db953a562102429d2a0a0490eaf</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>Generate PDF</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="MyDemo" source="x_1639325_mydemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyDemo">ddd25ccb83b06650ed7fffc6feaad3e4</sys_scope>
+        <sys_update_name>sys_ui_action_709b6db953a562102429d2a0a0490eaf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 14:32:48</sys_updated_on>
+        <table>x_1639325_mydemo_mydemo</table>
+        <ui11_compatible>false</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>709b6db953a562102429d2a0a0490eaf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 04:57:50</sys_created_on>
+        <sys_id>96dee9b953a562102429d2a0a0490e38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 04:57:50</sys_updated_on>
+        <table>sys_ui_action</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
